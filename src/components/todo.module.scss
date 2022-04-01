@@ -1,0 +1,30 @@
+.todo {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 8px 16px;
+
+  .actions {
+    opacity: 0;
+    pointer-events: none;
+    margin-inline-start: auto;
+  }
+
+  &.show,
+  &:hover {
+    .actions {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}
+
+.edit-input {
+  opacity: 0;
+  pointer-events: none;
+
+  &.editing {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
